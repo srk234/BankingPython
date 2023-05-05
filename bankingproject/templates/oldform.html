@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2> Form </h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="text" name="dob" placeholder="DOB"><br>
+    <input type="text" name="age" placeholder="Name"><br>
+    <input type="text" name="gender" placeholder="Gender"><br>
+    <input type="text" name="phone" placeholder="Phone Number"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <input type="text" name="address" placeholder="Address"><br>
+    <label for="district">Choose a district:</label>
+    <select id="district" name="district">
+    <option value="thiruvananthapuram">Thiruvananthapuram</option>
+    <option value="ernakulam">Ernakulam</option>
+    <option value="kollam">Kollam</option>
+    <option value="thrissur">Thrissur</option>
+    </select>
+    <input type="submit">
+    <input type="checkbox" id="debitcard" name="debitcard" value="debitcard">
+    <label for="debitcard">Debit Card</label><br>
+    <input type="checkbox" id="creditcard" name="creditcard" value="creditcard">
+    <label for="creditcard"> Credit Card</label><br>
+    <input type="checkbox" id="chequebook" name="creditcard" value="chequebook">
+    <label for="chequebook"> Cheque Book</label><br><br>
+    <input type="submit">
+</form>
+</body>
+<a class="btn btn-warning" href="newapp/logout">Logout</a>
+</html>
